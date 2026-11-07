@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" aria-hidden="true"><style>
+@media (prefers-reduced-motion: no-preference) {
+  .ring {  animation: draw 1.4s cubic-bezier(0.42, 0, 0.58, 1) both; }
+  .r2 { animation-delay: 0.12s; } .r3 { animation-delay: 0.24s; }
+  .r4 { animation-delay: 0.36s; } .r5 { animation-delay: 0.48s; }
+  .core { transform-box: fill-box; transform-origin: 50% 50%;
+          animation: grow 0.6s cubic-bezier(0.3, 0.6, 0.2, 1) 0.1s both; }
+}
+@keyframes draw { from { stroke-dashoffset: 1; } }
+@keyframes grow { from { transform: scale(0); } }
+.r2 { stroke-dasharray: 0.62 1; animation-name: draw-part; }@keyframes draw-part { from { stroke-dasharray: 0 1; } }.r1 { stroke-dasharray: 1; }</style><circle cx="80.0" cy="80.0" r="64" fill="none" stroke="#483BBA" stroke-opacity="0.22" stroke-width="1.5" stroke-dasharray="2 7" stroke-linecap="round"/><circle class="ring r2" cx="80.0" cy="80.0" r="64" pathLength="1" fill="none" stroke="#483BBA" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="0.62 1" transform="rotate(-90 80.0 80.0)"/><circle class="ring r1" cx="80.0" cy="80.0" r="34" pathLength="1" fill="none" stroke="#017A9B" stroke-opacity="0.85" stroke-width="1.5" transform="rotate(-90 80.0 80.0)"/><circle class="core" cx="80.0" cy="80.0" r="9" fill="#F7D710"/></svg>
